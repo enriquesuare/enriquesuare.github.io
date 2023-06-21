@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <title>Calculadora de la Fórmula General</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="home-tab"
+          data-toggle="tab"
+          href="#home"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+          >Inicio</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="profile-tab"
+          data-toggle="tab"
+          href="#profile"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+          >Quién soy</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="messages-tab"
+          data-toggle="tab"
+          href="#messages"
+          role="tab"
+          aria-controls="messages"
+          aria-selected="false"
+          >Contacto</a
+        >
+      </li>
+      <!-- 
+      <li class="nav-item">
+        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+      </li> -->
+    </ul>
+
+    <div class="tab-content">
+      <div
+        class="tab-pane active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      ></div>
+      <div
+        class="tab-pane"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane"
+        id="messages"
+        role="tabpanel"
+        aria-labelledby="messages-tab"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane"
+        id="settings"
+        role="tabpanel"
+        aria-labelledby="settings-tab"
+      >
+        ...
+      </div>
+    </div>
+
+    <div class="container-fluid row">
+      <div class="col-12">
+        <h1>La Fórmula General</h1>
+        <h3>
+          Calcula la solución de una ecuación de 2° grado (si existe en R)
+        </h3>
+      </div>
+
+      <div class="col-12 col-md-8">
+        <form class="form-inline mt-5 mb-3">
+          <div class="form-group col-12 col-md-3">
+            <label for="staticEmail2" class="bmd-label-floating"> a x ²</label>
+            <input
+              type="number"
+              class="form-control"
+              id="valordea"
+              placeholder="Ingresa el valor a"
+              required
+            />
+          </div>
+          <div class="form-group col-12 col-md-3">
+            <label for="inputPassword2" class="bmd-label-floating">+ b x</label>
+            <input
+              type="number"
+              class="form-control"
+              id="valordeb"
+              placeholder="Ingresa el valor b"
+              required
+            />
+          </div>
+          <div class="form-group col-12 col-md-3">
+            <label for="inputPassword2" class="bmd-label-floating"
+              >+ c = 0</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="valordec"
+              placeholder="Ingresa el valor c"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary col-12 col-md-3 mt-4">
+            Calcular solución
+          </button>
+        </form>
+        <ul class="list-group" id="listaDeCalculos">
+          <li class="list-group-item active">2 x² + 5 x - 9 = 0</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-2 mt-5">
+        <img
+          src="formulageneral.jpg"
+          alt=""
+          srcset=""
+          height="60%"
+        />
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="card border-success">
+        <div class="card-body text-success">
+          <h5 class="card-title">Creado por ENSD</h5>
+          <p class="card-text">Todo los derechos reservados ©2023.</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          ©2023 Enrique Nazareno Suarez Davila
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

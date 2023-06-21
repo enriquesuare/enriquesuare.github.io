@@ -1,0 +1,10 @@
+.contenedorsuperior {
+    justify-content: center;
+}
+
+.botonesparalista {
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+
+}
